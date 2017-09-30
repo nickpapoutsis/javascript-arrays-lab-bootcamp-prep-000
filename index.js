@@ -32,6 +32,6 @@ function removeLastKitten(){
 
 function removeFirstKitten() {
   let arr = [...kittens];
-  arr.unshift();
+  arr.slice(1);
   return arr;
 }
