@@ -31,5 +31,7 @@ function removeLastKitten(){
 }
 
 function removeFirstKitten() {
-  return kittens.unshift();
+  let arr = kittens;
+  arr.unshift();
+  return arr;
 }
