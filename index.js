@@ -21,12 +21,12 @@ function appendKitten(name){
 }
 
 function prependKitten(name){
-  let arr = kittens.unshift(name);
-  return arr;
+  return [name, ...kittens];
 }
 
 function removeLastKitten(){
-  let arr = kittens.pop;
+  let arr = kittens;
+  arr.pop();
   return arr;
 }
 
